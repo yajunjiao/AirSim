@@ -9,7 +9,8 @@ public class BlocksEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 		ExtraModuleNames.AddRange(new string[] { "Blocks" });
-        DefaultBuildSettings = BuildSettingsVersion.V2;
+        // Use default build settings compatible with older UE4 toolchains
+        // DefaultBuildSettings = BuildSettingsVersion.V2;
         //bUseUnityBuild = false;
         //bUsePCHFiles = false;
     }
