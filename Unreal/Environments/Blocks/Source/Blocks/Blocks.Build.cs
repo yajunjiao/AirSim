@@ -8,8 +8,16 @@ public class Blocks : ModuleRules
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         bEnableExceptions = true; // win64
+       // bUseUnity = true;
+       // bAllowLTCG = true;   // ¿ªÆô LTCG
+
         if (Target.Platform == UnrealTargetPlatform.Linux)
             bEnableExceptions = false;
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+        PublicDependencyModuleNames.AddRange(new string[] { 
+            "Core", 
+            "CoreUObject", 
+            "Engine", 
+            "InputCore" 
+        });
     }
 }
